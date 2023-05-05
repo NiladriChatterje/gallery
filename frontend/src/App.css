@@ -1,0 +1,52 @@
+#img {
+    object-fit: cover;
+    max-height: 300px;
+    max-width: 360px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 200ms;
+
+}
+
+.App {
+    overflow-x: clip;
+}
+
+#img:hover {
+    scale: 1.50;
+    object-fit: contain;
+    filter: brightness(0.5);
+}
+
+#img_container:hover {
+    transition: all 150ms;
+    scale: 1.05;
+
+}
+
+.modal2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    scale: 3;
+    object-fit: contain;
+}
+
+#sv-container {
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+
+@media all and (max-width:1200px) {
+    #sv-container {
+        left: 0;
+        width: 100%;
+        z-index: -2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
